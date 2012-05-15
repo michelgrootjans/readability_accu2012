@@ -7,7 +7,7 @@ end
 # implementation of the sieve of Erastosthenes
 # http://en.wikipedia.org/wiki/Sieve_of_Erastothenes
 def primes_up_to max_value
-
+  max_value ||= 0
   prime_candidates = (2..max_value).to_a
 
   (2..(max_value/2)).each do |prime|

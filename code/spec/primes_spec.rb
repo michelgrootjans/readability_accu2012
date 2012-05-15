@@ -1,9 +1,8 @@
-require "primes"
+require "primes_refactored"
 
 describe "prime numbers" do
   it "should not crash when passing a nil" do
-    pending
-    primes_up_to(nil).should throw ArgumentError
+    primes_up_to(nil).should == []
   end
 
   it "should not crash when passing -1" do
